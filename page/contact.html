@@ -17,7 +17,7 @@
             padding: 0;
             margin: 0;
             width: 100%;
-            height: 100%;
+            /* height: 100%;  */
             background-color: rgba(11, 1, 11, 0.922);
             font-family: 'Inconsolata', monospace;
         }
@@ -26,19 +26,23 @@
             width: 100%;
             height: 4rem;   
             border-bottom: 1px solid rgb(54, 54, 54);
+            padding: 20px;
         }
         header nav ul {
             list-style: none;
             display: flex;
             justify-content: space-around;   
+            
         }
-        header nav ul li {
-            padding: 20px;    
+        header a {
+            padding: 10px;    
+            border: 1px solid rgba(255, 0, 0, 0); 
+
         }  
         header nav ul li a:hover {
             color: gold;
             background-color: initial;
-            border: 1px solid goldenrod;
+            border: 1px solid goldenrod;  
             border-radius: 5px;
             padding: 10px; 
         }
@@ -83,6 +87,8 @@
             color: goldenrod;
             border-radius: 5px;
             padding: 10px;
+            border: 1px solid rgba(218, 165, 32, 0);
+
         }
         .social-handles a:hover {
             border: 1px solid goldenrod;
@@ -116,6 +122,8 @@
             bottom: 0;
             margin-top: 10px;
             margin-left: 25%;
+            border: 1px solid rgba(218, 165, 32, 0);
+
             
         }
         #submit:hover {
@@ -134,6 +142,8 @@
         .number-email a {
             padding: 10px;
             margin: 10px;
+            border: 1px solid rgba(218, 165, 32, 0);
+
         }
         .number-email a:hover {
             color: goldenrod;
@@ -157,7 +167,7 @@
     <header>
         <nav>
             <ul>
-                <li><a href="../index.html">Home</a></li>
+                <li><a href="/index.html">Home</a></li>
                 <li><a href="https://learn.gomycode.co/credentials/efc7ce10-f2bf-4149-994e-c36d9c37be5b/GYAOARMHSYYSCALOCEDEEEONI-CN-TC-O/00008466" target="_blank">Certification</a></li> 
                 <li><a href="#">Project</a></li>
                 <li><a href="#">Contact</a></li>
@@ -181,22 +191,23 @@
                 </div>  
                 <div class="social-handles">
                     <h4>Handles</h4>
-                    <a href=""><i class="fa-brands fa-x-twitter"></i></a></li>
-                    <a href="https://www.facebook.com/akinHL"><i class="fa-brands fa-facebook-f"></i></a></li>
+                    <a href="https://www.linkedin.com/in/akinseloyin-holo-873370264?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Br4MCsjcSR%2B%2B5%2F5OoG9KeYA%3D%3D"><i class="fa-brands fa-linkedin"></i></a>
+                    <!-- <a href="#"><i class="fa-brands fa-x-twitter"></i></a> -->
+                    <a href="https://www.facebook.com/akinHL"><i class="fa-brands fa-facebook-f"></i></a>
                 </div>
         </article>
         <article class="message-form">
-            <form action="mailto:holoakinseloyin@gmail.com" method="post">
+            <form action="mailto:holoakinseloyin@gmail.com" method="POST">
                 <label for="name"></label>
-                <input type="text" id="name" name="name" placeholder="your name">
+                <input type="text" id="name" name="name" placeholder="your name" disabled>
 
                 <label for="email"></label>
-                <input type="email" id="email" name="email" placeholder="email address">
+                <input type="email" id="email" name="email" placeholder="email address" disabled>
 
                 <label for="message"></label>
-                <textarea  col="40"  id="message" name="message" placeholder="type your message here"></textarea>
+                <textarea  col="40"  id="message" name="message" placeholder="type your message here" disabled></textarea>
 
-                <input id="submit" type="submit" value="send">
+                <input id="submit" type="submit" value="send" disabled>
             </form> 
         </article>
         </section>

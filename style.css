@@ -1,10 +1,11 @@
 body {
-    color: red;
+    color: #fff;
     padding: 0;
     margin: 0;
     background-color: rgba(11, 1, 11, 0.922);
-    font-family: 'Inconsolata', monospace;
-    
+    font-weight: 300;
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;    
 }
 
 
@@ -12,25 +13,29 @@ body {
 header {
     width: 100%;
     height: 4rem;   
+    border-bottom:1px solid rgba(245, 245, 245, 0.349);
 }
 header nav ul {
     list-style: none;
     display: flex;
     justify-content: flex-end;   
+
 }
 header nav ul li {
     padding: 20px;    
 }  
 
-a {
+a.nav-link {
     text-decoration: none;
     color: aliceblue;
     padding: 10px;
+    border: 1px solid rgba(218, 165, 32, 0); 
+    
 }
-a:hover {
+a.nav-link:hover {
     color: gold;
     background-color: initial;
-    border: 1px solid goldenrod;
+    border: 1px solid goldenrod; 
     border-radius: 5px;
 }
 
@@ -40,25 +45,42 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    line-height: 0.5rem;
     margin: 50px;
+    gap: 5rem;
 }
+
+h3 {
+    color: goldenrod;
+    width: 60%;
+    border-bottom:1px solid rgba(245, 245, 245, 0.349);
+    font-size: 30px;
+}
+
+
+
+/* (about-me) */ 
+a.reach-out {
+    text-decoration: none;
+    color: skyblue;
+}
+
 
 p {
     text-align: justify;
-    line-height: 1rem;
+    line-height: 1.5rem;
 }
-.skills{
+
+
+
+/* (skills) */
+.skills-display{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    padding: 30px;
-    gap: 50px;  
+    gap: 2.5em;  
 }
 
 .language {
+    display: flex;
+    flex-direction: column;
     position: relative;
     width: 300px;
     height: 100px;
@@ -66,6 +88,7 @@ p {
     border-radius: 10px;
     background-color: rgba(20, 1, 20, 0.692);
     padding: 10px;
+    margin: 10px;
 }
 progress[value] {
     color: gold;
@@ -90,5 +113,32 @@ span {
     top: 21%;
 } 
 
+h4 {
+    opacity: 5%;
+    text-align: center;
+}
+.quantitative {
+    display: block;
+    width: 40%;
+}
 
+
+
+/* (resume) */ 
+.resume {
+    margin-bottom: 50px; 
+}
+.cv {
+   text-decoration: none;
+    padding: 15px;
+    background-color: rgba(245, 245, 245, 0.836);
+    border-radius: 10px;
+}
+
+.qlity {
+   padding: 1em;
+   margin: 2em;
+   background-color: rgba(20, 1, 20, 0.144);
+   border-radius: 15px;
+}
 
