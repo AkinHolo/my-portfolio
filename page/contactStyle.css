@@ -1,0 +1,202 @@
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    /* height: 100%;  */
+    background-color: rgba(11, 1, 11, 0.922);
+    font-family: 'Inconsolata', monospace;
+}
+
+
+/*header */
+header {
+    width: 100%;
+    height: 4rem;   
+    border-bottom: 1px solid rgb(54, 54, 54);
+    padding: 20px;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;   
+    
+}
+header a {
+    padding: 10px;    
+    border: 1px solid rgba(255, 0, 0, 0); 
+
+}  
+header nav ul li a:hover {
+    color: gold;
+    background-color: initial;
+    border: 1px solid goldenrod;  
+    border-radius: 5px;
+    padding: 10px; 
+}
+
+
+h1,
+h3 {
+    color: aliceblue;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: aliceblue;
+ }
+
+ 
+    /* section */
+section {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+.contact-address {
+    position: relative;
+    width: 500px;
+    height: 400px;
+    background-color: rgba(11, 1, 11, 0.411);
+    border-right: 1px solid rgba(128, 128, 128, 0.514);
+    
+}
+.number-email {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+.number-email a {
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid rgba(218, 165, 32, 0);
+
+}
+.number-email a:hover {
+    color: goldenrod;
+    background-color: initial;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+}
+.social-handles  {
+    color: #ffffff2e;
+    position: absolute;
+    text-align: center;
+    bottom: 5%;
+    left: 40%; 
+} 
+.social-handles a {
+    color: goldenrod;
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid rgba(218, 165, 32, 0);
+
+}
+.social-handles a:hover {
+    border: 1px solid goldenrod;
+}
+
+
+/* form */
+.message-form {
+    width: 700px;
+    height: 400px;
+    background-color: #201f1f86; 
+    border-top: 1px solid rgba(128, 128, 128, 0.514);
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+input {
+    color: whitesmoke;
+    width: 500px;
+    height: 30px;  
+    background-color: rgba(128, 128, 128, 0.559);
+} 
+textarea {
+    color: whitesmoke;
+    width: 500px;
+    height: 200px;
+    background-color: rgba(128, 128, 128, 0.559);
+} 
+#submit {
+    width: 200px;
+    right: 55%;
+    bottom: 0;
+    margin-top: 10px;
+    margin-left: 25%;
+    border: 1px solid rgba(218, 165, 32, 0);
+
+    
+}
+#submit:hover {
+    color: goldenrod;
+    background-color: initial;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+}
+
+
+/* icons */
+.fa-solid {
+    font-size: 20px;
+} 
+
+ span {
+    background-color: #000000c5;
+    padding: 5px;
+    border-radius: 10px;
+ }
+
+
+
+ /* breakponits */
+ @media (min-width: 768px) and (max-width: 992px) {
+    body {
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    section {
+        width: 100%;  
+       
+        
+    }
+    .contact-address {
+        width: 300px;
+        /* height: 400px; */
+        
+    }
+  
+
+    .message-form {
+        width: 450px;
+       
+    }
+    form {
+        width: 350px;
+        padding: 0.7em;
+    }
+    input, 
+    textarea {
+        width: inherit; 
+    }
+    #submit {
+        width: 200px;
+    }
+
+    .fa-solid {
+        font-size: 1.2em;
+    }
+    span {
+        font-size: 0.8em;
+    }
+    
+}
