@@ -16,6 +16,10 @@ header {
     border-bottom: 1px solid rgb(54, 54, 54);
     padding: 20px;
 }
+   /*(hidden menu)*/
+header .media-menu {
+    display: none;
+}
 header nav ul {
     list-style: none;
     display: flex;
@@ -199,4 +203,65 @@ textarea {
         font-size: 0.8em;
     }
     
+}
+
+@media screen and (min-width: 320px) and (max-width: 475px ) {
+    body {
+        width: 100%;
+    }
+    header {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        align-items: center;
+        width: 300px;
+        margin-bottom: 2em;
+       
+    }
+    header a {
+        /* padding: 5px; */
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    section {
+        display: block;
+        margin: 2em 0.5em 2em 0.5em;
+        /* line-height: 2em; */
+    }
+    .contact-address {
+        display: block;
+        margin: auto;
+        width: 100%;
+    
+    }
+   
+    .number-email a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1em;
+    }
+    .number-email a .fa-solid {
+        font-size: 30px;
+    }
+    .number-email a span {
+        font-weight: bold; 
+        font-size: 22px;
+
+    }
+
+    .message-form {
+        width: 100%;
+        padding: 0 5px 0 5px;
+        margin-top: 5em;
+    }
+    form {
+        width: inherit;
+        
+    }
+    input, textarea, #submit {
+        width: 300px;
+        margin: auto; 
+    }
 }
