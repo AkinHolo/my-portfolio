@@ -160,32 +160,50 @@ textarea {
 
 
 
- /* breakponits */
- @media (min-width: 768px) and (max-width: 992px) {
+                /* breakponits */
+
+/* @media screen and (min-width: 1024) {
     body {
         width: 100%;
-        overflow: hidden;
-
     }
 
     section {
-        width: 100%;  
-       
-        
+        background-color: red;
+        justify-content: space-around;
     }
-    .contact-address {
-        width: 300px;
-        /* height: 400px; */
-        
-    }
-  
+} */
 
+
+
+
+
+
+ @media screen and (min-width: 768px) and (max-width: 992px) {
+    body {
+        width: 100%;
+      
+
+    }
+
+    header {
+        margin-bottom: 2rem;
+    }
+
+    section {
+       flex-direction: column;  
+       justify-content: center;
+       align-items: center; 
+       margin-top: 5rem;
+       gap: 2rem;    
+    }
+    .contact-address, 
     .message-form {
-        width: 450px;
-       
+        display: flex;
+        justify-content: center;
+        width: 45em;    
     }
     form {
-        width: 350px;
+        width: 40em;
         padding: 0.7em;
     }
     input, 
@@ -193,14 +211,18 @@ textarea {
         width: inherit; 
     }
     #submit {
-        width: 200px;
+        width: inherit;
+        margin: auto;
+        font-size: 25px;
     }
 
     .fa-solid {
-        font-size: 1.2em;
+        font-size: 2.5em;
+        margin: 20px;
     }
     span {
-        font-size: 0.8em;
+        margin: 20px;
+        font-size: 2em;
     }
     
 }
@@ -212,14 +234,12 @@ textarea {
     header {
         display: flex;
         flex-direction: column;
-        /* justify-content: space-around; */
         align-items: center;
         width: 300px;
         margin-bottom: 2em;
        
     }
     header a {
-        /* padding: 5px; */
         font-weight: bold;
         font-size: 14px;
     }
@@ -227,7 +247,6 @@ textarea {
     section {
         display: block;
         margin: 2em 0.5em 2em 0.5em;
-        /* line-height: 2em; */
     }
     .contact-address {
         display: block;
