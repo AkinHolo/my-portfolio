@@ -59,17 +59,14 @@ h3 {
 
 
 /* (about-me) */ 
-a.reach-out {
-    text-decoration: none;
-    color: skyblue;
-}
-
-
 p {
     text-align: justify;
     line-height: 1.5rem;
 }
-
+a.reach-out {
+    text-decoration: none;
+    color: skyblue;
+}
 
 
 /* (skills) */
@@ -77,7 +74,6 @@ p {
     display: flex;
     gap: 2.5em;  
 }
-
 .language {
     display: flex;
     flex-direction: column;
@@ -113,16 +109,17 @@ span {
     top: 21%;
 } 
 
-h4 {
+.quan {
     opacity: 5%;
     text-align: center;
 }
-.quantitative {
-    display: block;
-    width: 40%;
-}
-
-
+.qlity {
+    padding: 1em;
+    margin: 1em;
+    background-color: rgba(20, 1, 20, 0.144);
+    border-radius: 15px;
+ }
+ 
 
 /* (resume) */ 
 .resume {
@@ -135,16 +132,52 @@ h4 {
     border-radius: 10px;
 }
 
-.qlity {
-   padding: 1em;
-   margin: 2em;
-   background-color: rgba(20, 1, 20, 0.144);
-   border-radius: 15px;
+
+
+
+                    /* breakpoint */
+
+@media screen and (max-width: 767px) {
+    body {
+        width: 100%;
+    }
+
+    header {
+        color: #00ffff;
+        width: 100%;
+    }
+    nav {
+        width: 600px;  
+    }
+   
+
+    main {
+        margin: 1.5rem;
+    }
+
+    h1,
+    h2 {
+        text-align: center;
+    }
+
+    .skills-display {
+        gap: 1em;
+    }
+    .language {
+        width: 290px;
+        margin: 5px;
+    }
+    progress[value] {
+        width: 280px;
+    }
+    .qlity {
+        margin: 5px;
+    }
 }
 
 
 
-/* breakpoint */
+
 @media screen and (min-width: 320px) and (max-width: 475px) {
     body {
         width: 100%;

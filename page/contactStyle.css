@@ -18,7 +18,7 @@ header {
 }
    /*(hidden menu)*/
 header .media-menu {
-    display: none;
+    /* display: none; */
 }
 header nav ul {
     list-style: none;
@@ -162,27 +162,16 @@ textarea {
 
                 /* breakponits */
 
-/* @media screen and (min-width: 1024) {
+
+
+
+
+
+
+
+ @media screen and (max-width: 885) {
     body {
         width: 100%;
-    }
-
-    section {
-        background-color: red;
-        justify-content: space-around;
-    }
-} */
-
-
-
-
-
-
- @media screen and (min-width: 600px) and (max-width: 992px) {
-    body {
-        width: 100%;
-      
-
     }
 
     header {
@@ -223,10 +212,80 @@ textarea {
     span {
         margin: 20px;
         font-size: 2em;
-    }
-    
+    }  
 }
 
+
+
+
+@media screen and (max-width: 767px) {
+    body {
+        width: 100%;
+        color: aqua;
+        overflow-x: hidden;
+    }
+
+    header {
+        width: 100%;
+       
+    }
+    nav {
+        display: flex;
+        justify-content: space-evenly; 
+        /* align-items: center;  */
+        width: 600px;
+       
+    }
+     nav ul {
+        width: inherit;
+        justify-content: center;
+        align-items: center; 
+    }
+    li a {
+        color: #00ffff;
+        margin: 0;
+        font-weight: 400;
+        font-size: 20px;
+    }
+
+    section {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        gap: 50px;  
+    }
+    section .contact-address,
+    section .message-form {
+        display: flex;
+        justify-content: center;
+        width: 600px;
+        margin: auto;
+        border-radius: 5px;
+    }
+    .number-email {
+        /* justify-content: center; */
+        align-items: center; 
+        margin-top: 20px;
+        font-size: 30px;
+    }
+    .fa-phone,
+    .fa-envelope {
+        font-size: 30px;  
+    }
+
+    form {
+        width: inherit;
+        justify-content: center;
+        align-items: center;
+    }
+    input, 
+    textarea, 
+    #submit {
+        width: 500px;
+        margin: auto; 
+    }
+}
 
 
 
@@ -280,10 +339,11 @@ textarea {
         margin-top: 5em;
     }
     form {
-        width: inherit;
-        
+        width: inherit;  
     }
-    input, textarea, #submit {
+    input, 
+    textarea, 
+    #submit {
         width: 300px;
         margin: auto; 
     }
