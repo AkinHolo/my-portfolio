@@ -17,9 +17,9 @@ header {
     padding: 20px;
 }
    /*(hidden menu)*/
-header .media-menu {
-    /* display: none; */
-}
+/* header .media-menu {
+    display: none; 
+} */
 header nav ul {
     list-style: none;
     display: flex;
@@ -29,6 +29,8 @@ header nav ul {
 header a {
     padding: 10px;    
     border: 1px solid rgba(255, 0, 0, 0); 
+    font-weight: 400;
+    font-size: 25px;
 
 }  
 header nav ul li a:hover {
@@ -37,6 +39,7 @@ header nav ul li a:hover {
     border: 1px solid goldenrod;  
     border-radius: 5px;
     padding: 10px; 
+    
 }
 
 
@@ -58,6 +61,7 @@ section {
     justify-content: space-around;
     margin: 20px;
     padding: 20px;
+    gap: 25px;
 }
 
 
@@ -162,14 +166,7 @@ textarea {
 
                 /* breakponits */
 
-
-
-
-
-
-
-
- @media screen and (max-width: 885) {
+ @media screen  and (max-width: 885) {
     body {
         width: 100%;
     }
@@ -185,19 +182,21 @@ textarea {
        margin-top: 5rem;
        gap: 2rem;    
     }
+   
     .contact-address, 
     .message-form {
         display: flex;
         justify-content: center;
-        width: 45em;    
+        width: 500px;    
     }
     form {
-        width: 40em;
+        width: 20em;
+        width: 300px;
         padding: 0.7em;
     }
     input, 
     textarea {
-        width: inherit; 
+        width: 200px; 
     }
     #submit {
         width: inherit;
@@ -218,7 +217,7 @@ textarea {
 
 
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
     body {
         width: 100%;
         color: aqua;
