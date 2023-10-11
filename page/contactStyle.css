@@ -295,28 +295,28 @@ textarea {
         width: 100%;
     }
     header {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 300px;
+
+        width: 100%;
         margin-bottom: 2em;
        
+    }
+    header nav {
+        width: 300px;
     }
     header a {
         font-weight: bold;
         font-size: 14px;
     }
-    
-    section {
-        display: block;
-        margin: 2em 0.5em 2em 0.5em;
+
+    main {
+        width: 320px;
     }
-    .contact-address {
-        display: block;
-        margin: auto;
-        width: 100%;
-    
-    }
+   
+   
+    section  .contact-address,
+    section .message-form {
+        width: 320px;
+    } 
    
     .number-email a {
         display: flex;
@@ -333,13 +333,8 @@ textarea {
 
     }
 
-    .message-form {
-        width: 100%;
-        padding: 0 5px 0 5px;
-        margin-top: 5em;
-    }
     form {
-        width: inherit;  
+        width: 300px;  
     }
     input, 
     textarea, 
